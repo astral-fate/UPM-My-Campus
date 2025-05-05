@@ -152,7 +152,7 @@ classDiagram
         +markAsRead() void
     }
 
-    ' Relationships
+    
     User <|-- Student
     User <|-- CampusServicesManager
     User <|-- ClubAdministrator
