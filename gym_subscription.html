@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPM My-Campus - Gym Subscription</title>
+    <!-- Link to the SINGLE combined CSS file -->
+    <link rel="stylesheet" href="combined_style.css">
+    <!-- Add Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ================== GYM SUBSCRIPTION PAGE START =================== -->
+    <div id="gym-subscription-page">
+         <div class="app-layout">
+            <nav class="sidebar">
+                 <div class="sidebar-header">
+                    <h3>My-Campus Menu</h3>
+                </div>
+                 <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="gym_subscription.html" class="nav-link active"><i class="fas fa-dumbbell"></i> Gym Subscription</a></li>
+                    <li><a href="locker_rental.html" class="nav-link"><i class="fas fa-door-closed"></i> Locker Rental</a></li>
+
+                    <li><a href="student_clubs.html" class="nav-link"><i class="fas fa-users"></i> Student Clubs</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-award"></i> Reward Points</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-user-circle"></i> My Profile</a></li>
+                    <li><a href="login.html" class="nav-link logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                 <header class="main-header">
+                    <h1>Gym Subscription</h1>
+                </header>
+                <section class="content-area">
+                    <div class="card status-card">
+                         <h3>Current Subscription Status</h3>
+                         <p id="gym-status"><strong>Status:</strong> <span class="status-value">Inactive</span></p>
+                         <p id="gym-expires"><strong>Expires:</strong> <span class="status-value">N/A</span></p>
+                    </div>
+
+                    <div class="card plans-card">
+                        <h3>Available Plans / Renewal</h3>
+                        <form id="gym-subscription-form">
+                            <div class="plans-container">
+                                <div class="plan-option card">
+                                     <h4>1 Semester Pass</h4>
+                                     <p class="plan-details">Duration: Approx 4 months</p>
+                                     <p class="plan-price">Price: 150 SAR</p>
+                                     <label class="select-plan-label">
+                                         <input type="radio" name="gym_plan" value="semester_150" required> Select This Plan
+                                     </label>
+                                 </div>
+                                <div class="plan-option card">
+                                     <h4>Full Year Pass</h4>
+                                     <p class="plan-details">Duration: 12 months</p>
+                                     <p class="plan-price">Price: 400 SAR</p>
+                                     <label class="select-plan-label">
+                                         <input type="radio" name="gym_plan" value="year_400"> Select This Plan
+                                     </label>
+                                 </div>
+                            </div>
+                            <button type="submit" id="proceed-payment-btn" class="btn btn-primary" disabled>Proceed to Payment</button>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- ================== GYM SUBSCRIPTION PAGE END ===================== -->
+
+    <!-- Link to the SINGLE combined JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

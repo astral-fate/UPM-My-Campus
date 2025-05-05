@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPM My-Campus - Student Clubs</title>
+    <!-- Link to the SINGLE combined CSS file -->
+    <link rel="stylesheet" href="combined_style.css">
+    <!-- Add Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- =================== STUDENT CLUBS PAGE START ===================== -->
+    <div id="student-clubs-page"> 
+     
+         <div class="app-layout">
+             <nav class="sidebar">
+                 <div class="sidebar-header">
+                    <h3>My Campus Menu</h3>
+                </div>
+                 <ul class="nav-list">
+                   
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="gym_subscription.html" class="nav-link"><i class="fas fa-dumbbell"></i> Gym Subscription</a></li>
+                    <li><a href="locker_rental.html" class="nav-link"><i class="fas fa-door-closed"></i> Locker Rental</a></li> <!-- Changed icon -->
+                    <li><a href="student_clubs.html" class="nav-link active"><i class="fas fa-users"></i> Student Clubs</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-award"></i> Reward Points</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-user-circle"></i> My Profile</a></li>
+                    <li><a href="login.html" class="nav-link logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                <header class="main-header">
+                    <h1>Student Clubs</h1>
+                </header>
+                <section class="content-area">
+                    <div class="card search-filter-card">
+                        <h3>Find Clubs</h3>
+                        <div class="filter-bar">
+                             <div class="form-group">
+                                <label for="club-search">Search by Name:</label>
+                                <input type="text" id="club-search" placeholder="Enter club name...">
+                            </div>
+                            <div class="form-group">
+                                <label for="club-category">Filter by Category:</label>
+                                <select id="club-category" name="club_category">
+                                    <option value="all">All Categories</option>
+                                    <option value="academic">Academic</option>
+                                    <option value="sports">Sports</option>
+                                    <option value="arts">Arts & Culture</option>
+                                    <option value="community">Community Service</option>
+                                    <option value="technology">Technology</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clubs-container">
+                         <!-- Club examples - In real app, loaded dynamically -->
+                        <div class="club-card card" data-category="technology" data-name="Coding Club">
+                            <div class="club-card-header">
+                                <i class="fas fa-code club-icon"></i>
+                                <h4>Coding Club</h4>
+                            </div>
+                             <p class="club-description">Explore programming, web development, and more!</p>
+                             <p class="club-category-tag">Category: Technology</p>
+                            <button class="btn btn-secondary btn-sm view-club-details-btn" data-club-id="coding101">View Details</button>
+                        </div>
+                         <div class="club-card card" data-category="sports" data-name="Football Team">
+                             <div class="club-card-header">
+                                <i class="fas fa-futbol club-icon"></i>
+                                <h4>Football Team</h4>
+                            </div>
+                             <p class="club-description">Join the university football team. Practices Tuesdays & Thursdays.</p>
+                             <p class="club-category-tag">Category: Sports</p>
+                             <button class="btn btn-secondary btn-sm view-club-details-btn" data-club-id="football201">View Details</button>
+                        </div>
+                        <div class="club-card card" data-category="arts" data-name="Photography Club">
+                             <div class="club-card-header">
+                                <i class="fas fa-camera-retro club-icon"></i>
+                                <h4>Photography Club</h4>
+                            </div>
+                             <p class="club-description">Capture moments, learn techniques, share your work.</p>
+                             <p class="club-category-tag">Category: Arts & Culture</p>
+                             <button class="btn btn-secondary btn-sm view-club-details-btn" data-club-id="photo301">View Details</button>
+                        </div>
+                         <div class="club-card card" data-category="academic" data-name="Debate Society">
+                             <div class="club-card-header">
+                                <i class="fas fa-comments club-icon"></i>
+                                <h4>Debate Society</h4>
+                            </div>
+                             <p class="club-description">Sharpen your arguments and public speaking skills.</p>
+                            <p class="club-category-tag">Category: Academic</p>
+                             <button class="btn btn-secondary btn-sm view-club-details-btn" data-club-id="debate401">View Details</button>
+                        </div>
+                         <!-- Add more clubs -->
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- =================== STUDENT CLUBS PAGE END ======================= -->
+
+    <!-- Link to the SINGLE combined JavaScript file -->
+    <script src="combined_script.js"></script>
+</body>
+</html>

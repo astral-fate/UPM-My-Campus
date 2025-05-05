@@ -1,0 +1,897 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE205 Course Index - Information Security</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 25px 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3; /* Cairo Uni Blue */
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #007bff; /* Lighter Blue */
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.9em; /* Adjust font size for better fit */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px 12px; /* Adjust padding */
+            text-align: left;
+            vertical-align: top; /* Align content to top */
+        }
+        th {
+            background-color: #e9ecef;
+            font-weight: bold;
+            color: #495057;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f8f9fa;
+        }
+        tbody tr:hover {
+            background-color: #e2e6ea;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Adjust column widths */
+        th:nth-child(1), td:nth-child(1) { width: 10%; } /* Module */
+        th:nth-child(2), td:nth-child(2) { width: 30%; } /* Main Topics */
+        th:nth-child(3), td:nth-child(3) { width: 45%; } /* Key Concepts */
+        th:nth-child(4), td:nth-child(4) { width: 15%; } /* Algorithms/Tools */
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        li {
+             margin-bottom: 5px;
+        }
+        strong { /* For grading percentages */
+            color: #28a745; /* Green */
+        }
+        .course-desc {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SE205: Information Security</h1>
+        <p class="course-desc">
+            An overview of information security principles, threats, cryptography, and secure system design.
+        </p>
+
+        <h2>Course Syllabus</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Unit</th>
+                    <th>Main Topics</th>
+                    <th>Key Concepts</th>
+                    <th>Algorithms / Tools</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong><a href="chapters/c1.html">Unit 1</a></strong></td>
+                    <td>
+                        - Introduction to Information Security<br>
+                        - Security Threats & Attacks<br>
+                        - Security Services (CIA Triad)<br>
+                        - Security Mechanisms<br>
+                        - Network Security Models
+                    </td>
+                    <td>
+                        - Importance of Security (Big Data, Internet Growth)<br>
+                        - Historical Context (ARPANET)<br>
+                        - Information Security Definition<br>
+                        - Confidentiality, Integrity, Availability (CIA)<br>
+                        - Security Threats vs. Attacks<br>
+                        - Active vs. Passive Attacks (Masquerade, Replay, DoS, Eavesdropping, Traffic Analysis)<br>
+                        - Security Mechanisms (Encipherment, Access Control, Integrity, Digital Signature, Padding)<br>
+                        - OSI Security Architecture Overview<br>
+                        - General & Network Access Security Models<br>
+                        - Security Trinity (Prevention, Detection, Response)
+                    </td>
+                    <td>
+                        - CIA Triad<br>
+                        - Attack Classification<br>
+                        - Security Models
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong><a href="chapters/c2.html">Unit 2</a></strong></td>
+                    <td>
+                        - Cryptography Concepts<br>
+                        - Symmetric Key Ciphers<br>
+                        - Classical Encryption Techniques<br>
+                        - Modern Symmetric Block Ciphers
+                    </td>
+                    <td>
+                        - Cryptography Dimensions (Operations, Keys, Processing)<br>
+                        - Terminology (Plaintext, Ciphertext, Encrypt, Decrypt, Key, Cipher)<br>
+                        - Symmetric vs. Asymmetric Overview<br>
+                        - Cryptanalysis (Goals, Brute-Force)<br>
+                        - Substitution vs. Transposition<br>
+                        - Stream vs. Block Ciphers<br>
+                        - Classical Ciphers (Caesar, Monoalphabetic, Polyalphabetic, Playfair, Hill, Rail Fence)<br>
+                        - Simple Modern Ciphers (XOR)<br>
+                        - DES (Structure, Features, Weaknesses)<br>
+                        - SDES (Simplified DES for learning)<br>
+                        - 3DES (Structure, Keying Options)<br>
+                        - AES (Structure, Key Sizes, Rounds, Operations: SubBytes, ShiftRows, MixColumns, AddRoundKey)
+                    </td>
+                    <td>
+                        - Caesar Cipher<br>
+                        - Playfair Cipher<br>
+                        - Hill Cipher<br>
+                        - Rail Fence Cipher<br>
+                        - XOR Cipher<br>
+                        - DES / SDES<br>
+                        - 3DES<br>
+                        - AES
+                    </td>
+                </tr>
+                 <tr>
+                    <td><strong><a href="chapters/c3.html">Unit 3</a></strong></td>
+                    <td>
+                        - Asymmetric Key Cryptography<br>
+                        - Public Key Principles<br>
+                        - RSA Algorithm<br>
+                        - Diffie-Hellman Key Exchange<br>
+                        - Other Asymmetric Systems
+                    </td>
+                    <td>
+                        - Public/Private Key Pairs<br>
+                        - Encryption/Decryption Process<br>
+                        - Authentication with Asymmetric Keys<br>
+                        - Secrecy & Authentication Combined<br>
+                        - Applications (Encryption, Digital Signatures, Key Exchange)<br>
+                        - Requirements for Public Key Crypto<br>
+                        - Cryptanalysis (Brute-force, Factoring)<br>
+                        - Symmetric vs. Asymmetric (Comparison: Speed, Keys, Management, Use Cases)<br>
+                        - Hybrid Approach (e.g., TLS/SSL, PGP)<br>
+                        - RSA Algorithm Steps (Key Gen, Encrypt, Decrypt)<br>
+                        - Euler Totient Function<br>
+                        - Diffie-Hellman Steps (Setup, Key Calculation)<br>
+                        - Primitive Roots, Modulo Arithmetic<br>
+                        - ElGamal, ECC (Concepts)
+                    </td>
+                    <td>
+                        - RSA<br>
+                        - Diffie-Hellman<br>
+                        - ElGamal<br>
+                        - ECC
+                    </td>
+                </tr>
+                 <tr>
+                    <td><strong><a href="chapters/c4.html">Unit 4</a></strong></td>
+                    <td>
+                        - Message Authentication<br>
+                        - Hash Functions<br>
+                        - MAC Algorithms<br>
+                        - Digital Signatures<br>
+                        - SHA Algorithms<br>
+                        - Blockchain Hashing
+                    </td>
+                    <td>
+                        - Need for Authentication (Integrity, Sender ID, Replay Prevention)<br>
+                        - Authentication Functions Overview<br>
+                        - Hash Function Definition & Purpose<br>
+                        - Properties (One-way, Collision Resistance)<br>
+                        - Preimage vs. Collision<br>
+                        - Hash Applications (Integrity Check, Passwords, MACs, Signatures)<br>
+                        - Message Authentication Code (MAC) Process<br>
+                        - Keyed Hash Function<br>
+                        - HMAC vs. CMAC (Concept)<br>
+                        - Digital Signature Process (Hashing + Asymmetric Encryption)<br>
+                        - Simple Hash Functions (XOR-based)<br>
+                        - Security Requirements for Hash Functions<br>
+                        - Attacks (Brute-Force, Cryptanalysis, Birthday Attack)<br>
+                        - Secure Hash Structure (Merkle–Damgård)<br>
+                        - SHA Family (SHA-1, SHA-2 variants, SHA-3 Keccak/Sponge Construction)<br>
+                        - Blockchain Basics (Ledger, Blocks, Chaining, Hashes, Immutability)<br>
+                        - Block Structure (Header, Body, Merkle Root, Nonce)<br>
+                        - Proof-of-Work vs. Proof-of-Stake
+                    </td>
+                    <td>
+                        - MAC (HMAC, CMAC)<br>
+                        - Digital Signatures<br>
+                        - SHA-1<br>
+                        - SHA-2 (256, 512)<br>
+                        - SHA-3<br>
+                        - Merkle Trees<br>
+                        - PoW / PoS
+                    </td>
+                </tr>
+                 <tr>
+                    <td><strong><a href="chapters/c5.html">Unit 5</a></strong></td>
+                    <td>
+                        - Secure Software Design (SSDLC)<br>
+                        - Web Application Security<br>
+                        - Firewalls
+                    </td>
+                    <td>
+                        - Secure Software Development Life Cycle (SSDLC) vs. SDLC<br>
+                        - Importance of Early Security Integration<br>
+                        - Key Principles (Security by Design, Monitoring, Risk Assessment, Training, Collaboration)<br>
+                        - 7 Secure Design Principles (SaC, Secure Defaults, Least Privilege, SoD, Minimize Attack Surface, Complete Mediation, Fail Securely)<br>
+                        - Best Practices for Secure Development<br>
+                        - Web Security Principles (AuthN, Confidentiality, Integrity, Availability)<br>
+                        - Common Web Threats (SQL Injection, Cross-Site Scripting - XSS, Broken Authentication)<br>
+                        - Firewall Purpose & Function<br>
+                        - Firewall Types (Packet Filtering, Stateful, Proxy, NGFW)<br>
+                        - Web Application Firewall (WAF) - Purpose, How it works (Reverse Proxy), Relation to SQLi/XSS protection.
+                    </td>
+                    <td>
+                        - SSDLC Methodologies<br>
+                        - OWASP Top 10 (Implied)<br>
+                        - Firewalls (Various Types)<br>
+                        - WAF
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Course Objectives</h2>
+        <ul>
+            <li>Explain the objectives of information security (Confidentiality, Integrity, Availability - CIA Triad).</li>
+            <li>Understand basic categories of threats and attacks (passive, active).</li>
+            <li>Understand various cryptographic algorithms (Symmetric: DES, AES; Asymmetric: RSA, Diffie-Hellman; Hashing: SHA).</li>
+            <li>Describe public-key cryptosystems and their fundamental ideas.</li>
+            <li>Describe secure software design principles and programming techniques (SSDLC).</li>
+            <li>Discuss Web security concepts and common threats (SQLi, XSS).</li>
+            <li>Understand the role and types of Firewalls and WAFs.</li>
+            <li>Understand Intrusions and intrusion detection concepts (Covered implicitly, expanded in potential future units).</li>
+             <li>(Future Goal) Design Intrusion Detection System IDS (python).</li>
+
+        </ul>
+
+         <h2>Grading</h2>
+         <p><em>(Assumed based on SE204 example, adjust if different)</em></p>
+        <ul>
+            <li><strong>60%</strong>: Attendance, Assignments, Quizzes, Midterm Exam</li>
+            <li><strong>40%</strong>: Final Exam</li>
+        </ul>
+
+        <h2>Assignments (Examples from Slides)</h2>
+        <ul>
+            <li>**Assignment 1 (Unit 2):** Write Python code to decrypt messages using the Caesar cipher.</li>
+            <li>**Assignment 2 (Unit 2):** Encrypt various plaintexts using Caesar, Monoalphabetic, Polyalphabetic, Playfair, Hill, and XOR ciphers; Find SDES keys.</li>
+            <li>**Assignment 3 (Unit 3):** Perform RSA encryption/decryption and Diffie-Hellman key exchange calculations.</li>
+            <li>**Assignment 4 (Unit 4/5):** Explain hash functions & integrity; How digital signatures work; SHA-1 insecurity; Principles of secure software design; Best practices for secure development.</li>
+            <!-- Add other assignments if applicable -->
+        </ul>
+    </div>
+</body>
+</html>
+```
+
+---
+
+**Directory Structure:**
+
+Make sure you have a directory structure like this:
+
+```
+/ (Your main project folder)
+|-- index.html        (The file above)
+|-- chapters/
+|   |-- c1.html       (Content for Unit 1 - Generated Below)
+|   |-- c2.html       (Content for Unit 2 - Generated Below)
+|   |-- c3.html       (Content for Unit 3 - Generated Below)
+|   |-- c4.html       (Content for Unit 4 - Generated Below)
+|   |-- c5.html       (Content for Unit 5 - Generated Below)
+```
+
+---
+
+**File 2: `chapters/c1.html` (Unit 1: Intro & Basics)**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE205 - Unit 1: Introduction to Information Security</title>
+    <style>
+        /* Copy ALL CSS from the SE204 c1.html example here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #0056b3; /* Cairo University Blue */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            margin-top: 20px; /* Reduced top margin for sections */
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #007bff; /* Lighter Blue */
+        }
+
+        /* Main Tabs Styles */
+        .main-tabs {
+            display: flex;
+            justify-content: space-around; /* Or flex-start, center */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin-bottom: 25px;
+            border-bottom: 2px solid #0056b3;
+        }
+
+        .main-tabs .tab-button {
+            padding: 12px 20px; /* Adjusted padding slightly */
+            border: none;
+            background: none;
+            color: #0056b3;
+            font-size: 0.95em; /* Slightly smaller font */
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            margin-bottom: -2px; /* Overlap border */
+            border-bottom: 2px solid transparent;
+            text-align: center;
+        }
+
+        .main-tabs .tab-button.active {
+            background: #0056b3;
+            color: white;
+            border-bottom: 2px solid #0056b3;
+        }
+        .main-tabs .tab-button:hover:not(.active) {
+            background-color: #e9ecef;
+            border-bottom: 2px solid #adb5bd;
+        }
+
+        /* Content Sections */
+        .main-content {
+            display: none; /* Hide all main content sections by default */
+            animation: fadeIn 0.5s;
+        }
+
+        .main-content.active {
+            display: block; /* Show only the active one */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+
+        /* --- Accordion Styles (for Glossary) --- */
+        .glossary-accordion {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            overflow: hidden; /* Contain borders */
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #dee2e6; /* Separator */
+        }
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+
+        .accordion-header {
+            background-color: #f8f9fa;
+            color: #dc3545; /* Highlight Red for terms */
+            cursor: pointer;
+            padding: 15px 20px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            position: relative; /* For the indicator */
+        }
+
+        .accordion-header:hover {
+            background-color: #e9ecef;
+        }
+
+        /* Indicator (+/-) */
+        .accordion-header::after {
+            content: '\002B'; /* + sign */
+            color: #0056b3;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .accordion-header.active::after {
+            content: "\2212"; /* - sign */
+            transform: rotate(180deg); /* Optional: animate the sign itself */
+        }
+        /* Optional: Slightly different style for active header */
+        .accordion-header.active {
+             background-color: #e7f1ff;
+        }
+
+
+        .accordion-panel {
+            padding: 0 20px; /* Start with 0 padding top/bottom */
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth transition */
+        }
+        .accordion-panel p, .accordion-panel ul {
+            margin: 15px 0; /* Add margin back when panel is open */
+            color: #333; /* Reset color for definition */
+        }
+        .accordion-panel ul { list-style-type: disc; padding-left: 20px;}
+        .accordion-panel li { margin-bottom: 5px; }
+
+        /* --- End Accordion Styles --- */
+
+
+        /* Concepts Styles */
+        .concept-block {
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .concept-block h4 {
+            color: #17a2b8; /* Info Blue */
+            margin-top: 0;
+        }
+         .concept-block ul { list-style-type: disc; padding-left: 20px; margin-top: 10px; }
+         .concept-block li { margin-bottom: 5px; }
+         .comparison-table { width: 100%; border-collapse: collapse; margin-top: 15px;}
+         .comparison-table th, .comparison-table td { border: 1px solid #ccc; padding: 8px; text-align: left;}
+         .comparison-table th { background-color: #e9ecef; }
+         .concept-block img { max-width: 100%; height: auto; display: block; margin: 15px auto; border: 1px solid #ddd; padding: 3px; background: #fff; }
+
+        /* Quiz Styles (apply within #fill, #tf, #mc) */
+        .question {
+            margin-bottom: 25px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            background-color: #ffffff; /* White background for questions */
+            position: relative; /* For feedback positioning */
+        }
+
+        .question p {
+            margin: 0 0 15px;
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option-button {
+            padding: 10px 15px;
+            border: 1px solid #ced4da;
+            background: #f8f9fa; /* Light background for options */
+            color: #495057;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: left;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+            width: 100%;
+        }
+        .option-button:hover {
+             background-color: #e9ecef;
+             border-color: #adb5bd;
+        }
+
+        .option-button.selected {
+            background: #007bff;
+            color: white;
+            border-color: #0056b3;
+        }
+
+        .check-answer {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #28a745; /* Success Green */
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.2s ease;
+        }
+        .check-answer:hover {
+             background-color: #218838;
+        }
+
+        .feedback {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .feedback.correct {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .feedback.incorrect {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SE205 - Unit 1: Introduction to Information Security</h1>
+
+        <!-- Main Tab Buttons -->
+        <div class="main-tabs">
+            <button class="tab-button active" data-tab="glossary">Glossary</button>
+            <button class="tab-button" data-tab="concepts">Key Concepts</button>
+            <button class="tab-button" data-tab="fill">Fill in the Blank</button>
+            <button class="tab-button" data-tab="tf">True/False</button>
+            <button class="tab-button" data-tab="mc">Multiple Choice</button>
+        </div>
+
+        <!-- Glossary Section (Accordion) -->
+        <section id="glossary" class="main-content active">
+            <h2>Glossary of Terms</h2>
+            <div class="glossary-accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Access Control</button>
+                    <div class="accordion-panel">
+                        <p>A security mechanism used to stop unauthorized or unattended access to data (e.g., using passwords, firewalls, PINs).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Active Attack</button>
+                    <div class="accordion-panel">
+                        <p>An attack where the attacker directly interacts with and attempts to alter system resources or affect their operation (e.g., modifying messages, denial of service).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">ARPANET</button>
+                    <div class="accordion-panel">
+                        <p>Advanced Research Projects Agency Network. An early packet-switching network and the first network to implement the TCP/IP protocol suite. Considered the foundation of the modern internet.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Availability</button>
+                    <div class="accordion-panel">
+                        <p>The principle ensuring that information systems and data are accessible and usable upon demand by authorized users. Part of the CIA Triad.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">CIA Triad</button>
+                    <div class="accordion-panel">
+                        <p>The three fundamental principles of information security: Confidentiality, Integrity, and Availability.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Confidentiality</button>
+                    <div class="accordion-panel">
+                        <p>The principle ensuring that sensitive information is not disclosed to unauthorized individuals, entities, or processes. Part of the CIA Triad.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Data Integrity</button>
+                    <div class="accordion-panel">
+                        <p>As a principle (part of CIA Triad): Ensuring the accuracy, consistency, and trustworthiness of data over its entire lifecycle; preventing unauthorized modifications. As a mechanism: Appending a value (like a checksum or hash) created from the data itself to verify it hasn't been altered.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Denial of Service (DoS)</button>
+                    <div class="accordion-panel">
+                        <p>An active attack that attempts to make a machine or network resource unavailable to its intended users, often by overwhelming the target with traffic or requests.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Digital Signature</button>
+                    <div class="accordion-panel">
+                        <p>A security mechanism used to verify the authenticity and integrity of digital data. It typically involves cryptographic techniques (like hashing and asymmetric encryption) to 'sign' data, proving the sender's identity and ensuring the data hasn't been tampered with.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Digital Threat</button>
+                    <div class="accordion-panel">
+                        <p>Security threats originating from electronic or cyber means, such as malware, ransomware, phishing, or hacking.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Encipherment (Encryption)</button>
+                    <div class="accordion-panel">
+                        <p>A security mechanism that involves hiding or covering data to make it confidential, usually by applying mathematical algorithms (cryptography) to transform readable information (plaintext) into an unreadable form (ciphertext).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Information Security</button>
+                    <div class="accordion-panel">
+                        <p>The protection afforded to an automated information system to preserve the Confidentiality, Integrity, and Availability (CIA) of its resources (hardware, software, firmware, data, telecommunications).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Integrity</button>
+                    <div class="accordion-panel">
+                        <p>The principle ensuring that data is accurate, complete, and has not been tampered with or altered without authorization. Part of the CIA Triad.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Masquerade Attack</button>
+                    <div class="accordion-panel">
+                        <p>An active attack where one entity pretends to be a different entity (e.g., a user pretending to be another user, a malicious website mimicking a legitimate one).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Modification of Messages</button>
+                    <div class="accordion-panel">
+                        <p>An active attack where an attacker alters legitimate communication between others (e.g., changing the content of an email or financial transaction).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Network Security Model</button>
+                    <div class="accordion-panel">
+                        <p>A framework describing how security services are implemented across a network to protect information during transmission, typically involving senders, receivers, information channels, potential opponents, and trusted third parties.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">OSI Security Architecture</button>
+                    <div class="accordion-panel">
+                        <p>A framework that defines security attacks, mechanisms, and services related to network communications. It helps in organizing the task of providing security.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Passive Attack</button>
+                    <div class="accordion-panel">
+                        <p>An attack where the attacker attempts to learn or make use of information from the system but does not affect system resources (e.g., eavesdropping, traffic analysis). The attacker monitors communication without altering it.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Physical Threat</button>
+                    <div class="accordion-panel">
+                        <p>Security threats involving physical actions, such as theft of equipment, vandalism, or unauthorized physical access to facilities.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Release of Message Content (Eavesdropping)</button>
+                    <div class="accordion-panel">
+                        <p>A passive attack where the attacker monitors transmissions for message content (e.g., reading emails, listening to phone calls).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Replay Attack</button>
+                    <div class="accordion-panel">
+                        <p>An active attack where an attacker passively captures data units (like login credentials or transaction messages) and retransmits them later to produce an unauthorized effect.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Repudiation</button>
+                    <div class="accordion-panel">
+                        <p>An attack where either the sender or receiver of a message later denies having sent or received the message. Security services aim to prevent this (non-repudiation).</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Security Attack</button>
+                    <div class="accordion-panel">
+                        <p>Any action that compromises the security of information owned by an organization. Classified as passive or active.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Security Mechanism</button>
+                    <div class="accordion-panel">
+                        <p>A process (or a device incorporating such a process) that is designed to detect, prevent, or recover from a security attack (e.g., encryption, digital signatures, access control).</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Security Service</button>
+                    <div class="accordion-panel">
+                        <p>A service that enhances the security of data processing systems and information transfers. It aims to counter security attacks using one or more security mechanisms. Often defined by the CIA principles (Confidentiality, Integrity, Availability) plus others like Authentication and Non-repudiation.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Security Threat</button>
+                    <div class="accordion-panel">
+                        <p>Any potential danger or malicious activity that could exploit a vulnerability to breach security and cause harm or damage to an organization, its data, or personnel. Can be physical or digital.</p>
+                    </div>
+                </div>
+                 <div class="accordion-item">
+                    <button class="accordion-header">Security Trinity</button>
+                    <div class="accordion-panel">
+                        <p>The concept that security is based on the interplay of Prevention, Detection, and Response mechanisms.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Traffic Analysis</button>
+                    <div class="accordion-panel">
+                        <p>A passive attack where the attacker observes the pattern of traffic (source, destination, frequency, length) even if the content is encrypted, potentially inferring information.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Traffic Padding</button>
+                    <div class="accordion-panel">
+                        <p>A security mechanism that involves inserting bogus data into a data stream to thwart traffic analysis attempts by masking the true volume or pattern of communication.</p>
+                    </div>
+                </div>
+
+            </div> <!-- End glossary-accordion -->
+        </section>
+
+        <!-- Concepts Section -->
+        <section id="concepts" class="main-content">
+             <h2>Key Concepts</h2>
+
+             <div class="concept-block">
+                <h4>The Need for Information Security</h4>
+                <p>The rapid growth of the internet and communications, coupled with the rise of Big Data and interconnected devices (IoT), has made security a critical subject. Early networks like ARPANET had minimal security, leading to vulnerabilities. Today's environment includes sophisticated criminals and complex threats targeting individuals, organizations, and critical infrastructure.</p>
+                <p>Examples of significant breaches illustrate the impact:</p>
+                <ul>
+                    <li>**Mirai Botnet (2016):** Used IoT devices for massive DDoS attacks.</li>
+                    <li>**Ukraine Power Grid (2017):** Spear-phishing led to power outages affecting 1.4 million people.</li>
+                    <li>**Amazon Ring (2019):** Hacked cameras invaded privacy.</li>
+                    <li>**Oldsmar Water Supply (2021):** Attempted poisoning via system breach.</li>
+                    <li>**Zyxel Gear (2023):** Exploited vulnerability used to build Mirai-like botnets.</li>
+                </ul>
+             </div>
+
+             <div class="concept-block">
+                <h4>The CIA Triad: Core Security Principles</h4>
+                <p>These are the fundamental goals of information security:</p>
+                <ul>
+                    <li><strong>Confidentiality:</strong> Preventing unauthorized disclosure of information. Ensuring only authorized individuals can access sensitive data.</li>
+                    <li><strong>Integrity:</strong> Ensuring data is accurate, complete, and trustworthy. Preventing unauthorized modification or deletion.</li>
+                    <li><strong>Availability:</strong> Ensuring systems and data are accessible and functional for authorized users when needed.</li>
+                </ul>
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/CIA_triad.svg/300px-CIA_triad.svg.png" alt="CIA Triad Diagram">
+             </div>
+
+            <div class="concept-block">
+                <h4>Security Attacks: Active vs. Passive</h4>
+                <p>Attacks are actions compromising security.</p>
+                <p><strong>Passive Attacks:</strong> Involve monitoring or eavesdropping without altering data. Goal is to obtain information.</p>
+                <ul>
+                    <li><em>Release of Message Content:</em> Reading the content of communications.</li>
+                    <li><em>Traffic Analysis:</em> Observing patterns (who talks to whom, how often, how much) even if content is hidden.</li>
+                </ul>
+                 <p><strong>Active Attacks:</strong> Involve modification of data streams or creation of false streams. Goal is to alter system resources or affect operation.</p>
+                 <ul>
+                    <li><em>Masquerade:</em> Pretending to be another entity.</li>
+                    <li><em>Replay:</em> Capturing and retransmitting valid data units.</li>
+                    <li><em>Modification of Messages:</em> Changing, deleting, or delaying legitimate messages.</li>
+                    <li><em>Denial of Service (DoS):</em> Preventing legitimate use of resources.</li>
+                 </ul>
+                <p>Passive attacks are hard to detect but easier to prevent (e.g., via encryption). Active attacks are harder to prevent but easier to detect (as they cause disruption).</p>
+
+                <table class="comparison-table">
+                    <thead><tr><th>Feature</th><th>Active Attacks</th><th>Passive Attacks</th></tr></thead>
+                    <tbody>
+                        <tr><td>Goal</td><td>Harm system, alter data</td><td>Learn information</td></tr>
+                        <tr><td>Interaction</td><td>Modify data/connections</td><td>Observe, copy, monitor</td></tr>
+                        <tr><td>Detection</td><td>Relatively Easier (causes changes)</td><td>Difficult (no system changes)</td></tr>
+                        <tr><td>Prevention</td><td>Difficult (requires active defenses)</td><td>Relatively Easier (e.g., encryption)</td></tr>
+                         <tr><td>Impact</td><td>Threatens Integrity & Availability</td><td>Threatens Confidentiality</td></tr>
+                        <tr><td>Victim Aware</td><td>Usually Informed (system disruption)</td><td>Usually Unaware</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="concept-block">
+                <h4>Security Services and Mechanisms</h4>
+                <p><strong>Security Services:</strong> Aim to counter security attacks and provide desired security properties (often based on CIA + Authentication, Non-Repudiation). Examples: Confidentiality service, Integrity service, Authentication service.</p>
+                <p><strong>Security Mechanisms:</strong> Specific methods or techniques used to implement security services.</p>
+                <ul>
+                    <li><strong>Encipherment (Encryption):</strong> Provides confidentiality by making data unreadable without a key.</li>
+                    <li><strong>Data Integrity Mechanisms:</strong> Detect unauthorized data alteration (e.g., using hash functions, MACs).</li>
+                    <li><strong>Digital Signature:</strong> Provides authentication, integrity, and non-repudiation using asymmetric cryptography.</li>
+                    <li><strong>Access Control:</strong> Restricts access to resources based on identity/permissions (passwords, firewalls).</li>
+                     <li><strong>Traffic Padding:</strong> Hides traffic patterns by inserting dummy data.</li>
+                    <li><em>Others include:</em> Notarization, Routing Control.</li>
+                 </ul>
+                 <p>The OSI Security Architecture provides a framework for classifying these attacks, services, and mechanisms.</p>
+            </div>
+
+            <div class="concept-block">
+                 <h4>Network Security Models</h4>
+                 <p>Models help visualize how security is applied in networks.</p>
+                 <p><strong>General Model:</strong> Shows Sender, Receiver, a secure Transformation (encryption/code), a Secret shared between them (key), an Information Channel (network), a potential Opponent on the channel, and often a Trusted Third Party (for key distribution).</p>
+                 <!-- Placeholder for General Model Image -->
+                 <p><strong>Network Access Model:</strong> Shows computing resources (data, processes, software) protected by a 'Gatekeeper function' (like a firewall) controlling access from the network (Access channel). Opponents (hackers, malware) try to bypass the gatekeeper.</p>
+                 <!-- Placeholder for Network Access Model Image -->
+                 <p>Key tasks in designing security services based on these models:</p>
+                 <ol>
+                     <li>Design a suitable transformation/encryption algorithm.</li>
+                     <li>Generate secret information (keys) for the algorithm.</li>
+                     <li>Develop secure methods for distributing/sharing keys.</li>
+                     <li>Specify protocols for using the algorithm and keys.</li>
+                 </ol>
+                 <p>Threats in the Access Model:</p>
+                 <ul>
+                    <li><strong>Information Access Threats:</strong> Unauthorized interception or modification of data.</li>
+                    <li><strong>Service Threats:</strong> Exploiting flaws to deny service to legitimate users (e.g., viruses, worms).</li>
+                 </ul>
+            </div>
+             <div class="concept-block">
+                <h4>Security Trinity: Prevention, Detection, Response</h4>
+                <p>A balanced security posture relies on:</p>
+                <ul>
+                    <li><strong>Prevention:</strong> Measures to stop attacks from succeeding (e.g., firewalls, strong passwords, encryption).</li>
+                    <li><strong>Detection:</strong> Measures to identify when attacks are occurring or have occurred (e.g., intrusion detection systems, log analysis).</li>
+                    <li><strong>Response:</strong> Actions taken to handle incidents, limit damage, and recover (e.g., incident response plans, backups, isolating systems).</li>
+
+
+                </html>

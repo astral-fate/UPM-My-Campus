@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPM My-Campus - Locker Rental</title>
+    <!-- Link to the SINGLE combined CSS file -->
+    <link rel="stylesheet" href="combined_style.css">
+    <!-- Add Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== LOCKER RENTAL PAGE START ==================== -->
+    <div id="locker-rental-page"> 
+ 
+        <div class="app-layout">
+             <nav class="sidebar">
+                 <div class="sidebar-header">
+                    <h3>My-Campus Menu</h3>
+                </div>
+                 <ul class="nav-list">
+                 
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="gym_subscription.html" class="nav-link"><i class="fas fa-dumbbell"></i> Gym Subscription</a></li>
+                    <li><a href="locker_rental.html" class="nav-link active"><i class="fas fa-locker"></i> Locker Rental</a></li> 
+                    <li><a href="student_clubs.html" class="nav-link"><i class="fas fa-users"></i> Student Clubs</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-award"></i> Reward Points</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-user-circle"></i> My Profile</a></li>
+                    <li><a href="login.html" class="nav-link logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                <header class="main-header">
+                    <h1>Locker Rental</h1>
+                </header>
+                <section class="content-area">
+                     <div class="card status-card">
+                         <h3>Current Locker Rental</h3>
+                         <p id="locker-status"><strong>Locker:</strong> <span class="status-value">None</span></p>
+                         <p id="locker-expires"><strong>Expires:</strong> <span class="status-value">N/A</span></p>
+                         <!-- Dynamically update this based on user data -->
+                    </div>
+
+                     <div class="card locker-selection-card">
+                        <h3>Available Lockers</h3>
+                         <form id="locker-rental-form">
+                            <div class="filter-bar">
+                                <div class="form-group">
+                                    <label for="locker-location">Filter by Location:</label>
+                                    <select id="locker-location" name="locker_location">
+                                        <option value="all">All Locations</option>
+                                        <option value="Building A - Floor 1">Building A - Floor 1</option>
+                                        <option value="Building B - Floor 2">Building B - Floor 2</option>
+                                        <option value="Gym Foyer">Gym Foyer</option>
+                                    </select>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="locker-size">Filter by Size:</label>
+                                    <select id="locker-size" name="locker_size">
+                                        <option value="all">All Sizes</option>
+                                        <option value="small">Small</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="lockers-container">
+                                <!-- Locker examples - In real app, loaded dynamically -->
+                                <div class="locker-option card" data-location="Building A - Floor 1" data-size="medium">
+                                    <h4>Locker A-101</h4>
+                                    <p class="locker-details">Location: Building A - Floor 1</p>
+                                    <p class="locker-details">Size: Medium</p>
+                                    <p class="locker-price">Price: 50 SAR / Semester</p>
+                                    <label class="select-locker-label">
+                                        <input type="radio" name="locker_selection" value="A-101_50" required> Select This Locker
+                                    </label>
+                                </div>
+                                <div class="locker-option card" data-location="Gym Foyer" data-size="small">
+                                    <h4>Locker G-015</h4>
+                                    <p class="locker-details">Location: Gym Foyer</p>
+                                    <p class="locker-details">Size: Small</p>
+                                    <p class="locker-price">Price: 30 SAR / Semester</p>
+                                    <label class="select-locker-label">
+                                         <input type="radio" name="locker_selection" value="G-015_30"> Select This Locker
+                                    </label>
+                                </div>
+                                 <div class="locker-option card" data-location="Building B - Floor 2" data-size="large">
+                                    <h4>Locker B-210</h4>
+                                    <p class="locker-details">Location: Building B - Floor 2</p>
+                                    <p class="locker-details">Size: Large</p>
+                                    <p class="locker-price">Price: 75 SAR / Semester</p>
+                                     <label class="select-locker-label">
+                                         <input type="radio" name="locker_selection" value="B-210_75"> Select This Locker
+                                    </label>
+                                </div>
+                            </div>
+                             <div class="form-group rental-period">
+                                <label for="rental-period">Select Rental Period:</label>
+                                <select id="rental-period" name="rental_period" required disabled>
+                                    <option value="semester">1 Semester</option>
+                                    <option value="full_year">Full Year (If available)</option>
+                                </select>
+                            </div>
+                            <button type="submit" id="proceed-locker-payment-btn" class="btn btn-primary" disabled>Proceed to Payment</button>
+                         </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+   
+    <script src="combined_script.js"></script>
+</body>
+</html>

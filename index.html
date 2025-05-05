@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPM My-Campus - Dashboard</title>
+    <!-- Link to the SINGLE combined CSS file -->
+    <link rel="stylesheet" href="combined_style.css">
+    <!-- Add Font Awesome for icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ======================= MAIN MENU PAGE START ===================== -->
+    <div id="main-menu-page">
+        <div class="app-layout">
+            <nav class="sidebar">
+                <div class="sidebar-header">
+                    <h3>My Campus Menu</h3>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="gym_subscription.html" class="nav-link"><i class="fas fa-dumbbell"></i> Gym Subscription</a></li>
+                    <li><a href="locker_rental.html" class="nav-link"><i class="fas fa-door-closed"></i> Locker Rental</a></li>
+                    <li><a href="student_clubs.html" class="nav-link"><i class="fas fa-users"></i> Student Clubs</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-award"></i> Reward Points</a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-user-circle"></i> My Profile</a></li>
+                    <li><a href="login.html" class="nav-link logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                <header class="main-header">
+                    <h1>Welcome to UPM My-Campus</h1>
+                </header>
+                <section class="content-area">
+                    <h2>Dashboard Overview</h2>
+                    <p>Welcome, Sarah Ahmed!</p>
+                    <p>Here you can quickly access your campus services.</p>
+                     <div class="dashboard-widgets">
+                         <div class="widget">
+                             <h3>Gym Status</h3>
+                             <p>Status: Active</p>
+                             <p>Expires: 2025-12-31</p>
+                         </div>
+                          <div class="widget">
+                             <h3>Locker</h3>
+                             <p>Locker: B-105</p>
+                             <p>Expires: 2025-09-30</p>
+                         </div>
+                          <div class="widget">
+                             <h3>Reward Points</h3>
+                             <p>Balance: 150 Points</p>
+                         </div>
+                     </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <!-- ======================= MAIN MENU PAGE END ======================= -->
+
+    <!-- Link to the SINGLE combined JavaScript file -->
+    <script src="combined_script.js"></script>
+</body>
+</html>
