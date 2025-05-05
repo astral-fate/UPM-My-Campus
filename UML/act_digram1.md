@@ -15,7 +15,7 @@ graph TD
     M --> N[Display Confirmation & Digital Receipt];
     N --> O[Send Confirmation Notification];
     O --> P[End];
-    L --> H; %% Option to retry payment method or choose another
+    L --> H; 
 
     subgraph Payment Sub-Process
         J --> J1[Connect to Payment Gateway];
