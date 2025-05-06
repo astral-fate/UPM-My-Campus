@@ -5,9 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPM My-Campus - Login</title>
     <!-- Link to the SINGLE combined CSS file -->
-    <link rel="stylesheet" href="style.css">
+
     <!-- Add Font Awesome for icons (optional) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f7f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Login Container Styles */
+.login-container {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Heading Styles */
+h2 {
+    color: #0063c6;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* Button Styles */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #0063c6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0057b3;
+}
+
+/* Links Styles */
+.form-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-links a {
+    color: #0063c6;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+</style>
+
 </head>
 <body>
 
@@ -16,7 +120,7 @@
         <div class="container login-container">
             <div class="card">
                 <h2>UPM My-Campus Login</h2>
-                <form id="login-form">
+                <form id="login-form" action="index.html" method="GET">
                     <div class="form-group">
                         <label for="username">Student ID / Username</label>
                         <input type="text" id="username" name="username" placeholder="Enter your ID or username" required>
